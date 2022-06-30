@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .carousel {
+    top: 0;
+    margin-top: -5em;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+
+  .carousel .carousel-caption {
+    top: 14em;
+    padding-bottom: 5em !important;
+  }
+
+  .carousel .carousel-item .carousel-caption h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: bolder;
+    color: black;
+    font-size: 4rem;
+    text-shadow: 1px 1px 3px white;
+  }
+
+  .carousel .carousel-item .carousel-caption p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 8px black;
+  }
+
+  .menu {
+    /* background: #000; */
+    margin-top: 10em;
+  }
+
+  .menu .dropdown-toggle {
+    width: 12em;
+    height: 3em;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" class="background:rgba(0,0,0,0)">
+    <div class="container">
+      <a class="navbar-brand" href="#!">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link mx-3" aria-current="page" href="#!">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" aria-current="page" href="#!">Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="containter">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/random/192x108" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Nama App</h1>
+            <p class="text-capitalze">Secure crypto exhange market</p>
+            <div class="menu mt-5 d-flex justify-content-center">
+              <div class="dropdown mx-3">
+                <button class="btn btn-secondary dropdown-toggle bg-primary border-0 bg-gradient" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Marketplace
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown mx-3">
+                <button class="btn btn-secondary dropdown-toggle bg-primary border-0 bg-gradient" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Crypto Exchanger
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown mx-3">
+                <button class="btn btn-secondary dropdown-toggle bg-primary border-0 bg-gradient" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Assets Redeem
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown mx-3">
+                <button class="btn btn-secondary dropdown-toggle bg-primary border-0 bg-gradient" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contract Explorer
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
